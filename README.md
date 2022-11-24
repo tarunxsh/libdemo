@@ -1,4 +1,4 @@
-setup package
+# Setup Package
     mkdir libdemo
     cd libdemo
     npm init
@@ -8,9 +8,10 @@ setup package
     setup lib entry file: "main": "lib/index.js" in package.json
     setup files to be published: "files": ["lib/**/*"] in package.json
 
-create basic src/index.ts
+# Create `src/index.ts`
+    export const echo = (msg:string) => console.log(msg)
 
-publish pkg: 
+# Publish Package: 
     npm run build
     npm login
     npm publish --access=public
