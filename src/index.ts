@@ -1,0 +1,1 @@
+export const echo = (msg:string) => console.log(msg)
